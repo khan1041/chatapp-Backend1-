@@ -1,6 +1,6 @@
 
 
-import express from 'express'
+import express, { urlencoded } from 'express'
 //const express=require('express')
 import conectedDb from './db/dbconection.js'
 //import router from './routes/userroutes.js'
@@ -17,6 +17,8 @@ export default app
 dotenv.config()
 app.use(cookieParser())
 app.use(express.json())
+app.use(urlencoded({ extended: true }));
+
 app.use(
   cors({
  origin:true,
