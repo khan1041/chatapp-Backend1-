@@ -1,7 +1,6 @@
 
 
 import express, { urlencoded } from 'express'
-//const express=require('express')
 import conectedDb from './db/dbconection.js'
 //import router from './routes/userroutes.js'
 import router from './routes/Userroutes.js';
