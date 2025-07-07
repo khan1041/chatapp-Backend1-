@@ -16,7 +16,7 @@ export default app
 dotenv.config()
 app.use(cookieParser())
 app.use(express.json())
-//app.use(urlencoded({ extended: true }));
+app.use(urlencoded({ extended: true }));
 
 app.use(
   cors({
