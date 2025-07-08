@@ -3,7 +3,7 @@
 
 
 import express from 'express'
-import { register,login,userdata,getOtherUsers} from '../controller/Usercontoler.js'
+import { register,login,userdata,getOtherUsers,logout} from '../controller/Usercontoler.js'
 //import upload from '../middlewares/Multer.js'
 import { singleUpload } from '../middlewares/multer.js'
 import isAuthenticated from '../middlewares/isAuthenticated.js'
