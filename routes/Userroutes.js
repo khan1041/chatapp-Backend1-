@@ -16,6 +16,7 @@ router.post('/register',register)
 router.post("/login",login)
 router.route("/get").get(isAuthenticated,getOtherUsers);
  router.route("/user").get(isAuthenticated,userdata);
+router.route("/logout").get(logout);
 
 // router.get("/profile",isAuthenticated,profile)
 // router.get("/get",isAuthenticated,alluser)
